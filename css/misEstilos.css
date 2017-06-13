@@ -1,0 +1,31 @@
+.cambiarBorder{
+	border-radius: 10px;
+	box-shadow: 4px 4px 14px 0px rgba(58,58,66,1);
+}
+
+.cambiarEscala{
+    -moz-transition: -moz-transform 1s ease-in-out 0.1s;
+    -webkit-transition: -webkit-transform 1s ease-in-out 0.1s;
+}
+
+.cambiarEscala:hover{
+	-moz-transform: scale(1.05);
+    -webkit-transform: scale(1.05);
+}
+#navActive li a:hover{
+	background: #ddd;
+}
+
+#activo{
+	color: black;
+	background-color: #ccc;
+}
+
+/*Para menu pegagozo*/
+.menu-fixed{
+	position: fixed;
+	z-index: 1000;
+	top: 0;
+	width: 100%;
+	box-shadow: 0px 4px rgba(0,0,0,.5);
+}
