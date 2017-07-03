@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Nosotros- Queso Canchaqueño Artesno</title>
+
+    <!-- Bootstrap Core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link href="css/business-casual.css" rel="stylesheet">
+
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Josefin+Slab:100,300,400,600,700,100italic,300italic,400italic,600italic,700italic" rel="stylesheet" type="text/css">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+    <link rel="stylesheet" type="text/css" href="css/misEstilos.css">
+    <!--Estilos para barra de redes sociales-->
+    <link rel="stylesheet" href="css/font.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="shortcut icon" type="image/x-icon" href="img/mifavicon.ico" />
+
+
+	<!-- Start WOWSlider.com HEAD section --> <!-- add to the <head> of your page -->
+	<link rel="stylesheet" type="text/css" href="engine0/style.css" />
+	<script type="text/javascript" src="engine0/jquery.js"></script>
+	<!-- End WOWSlider.com HEAD section -->
+	<!-- Start WOWSlider.com HEAD section --> <!-- add to the <head> of your page -->
+	<link rel="stylesheet" type="text/css" href="engine1/style.css" />
+	<!--script type="text/javascript" src="engine1/jquery.js"></script-->
+	<!-- End WOWSlider.com HEAD section --></head>
+
+<body>
+
+    <!--Barra de Redes Sociales-->
+    <div class="social-bar">
+        <a href="https://www.facebook.com/Queso-Fresco-Especial-Canchaque-725553264288187/" class="icon icon-facebook" target="_blank"></a>
+        <a href="https://twitter.com/DevCodela" class="icon icon-twitter" target="_blank"></a>
+        <a href="https://www.youtube.com/c/devcodela" class="icon icon-youtube" target="_blank"></a>
+        <a href="https://www.instagram.com/devcodela/" class="icon icon-instagram" target="_blank"></a>
+    </div>
+
+    <div class="brand">Queso Artesano Canchaqueño</div>
+    <div class="address-bar">Libertad 501 | Los Tijerales del Arte Culinario, Piura | Tel. 978263726</div>
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-default menu" role="navigation">
+        <div class="container">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <!-- navbar-brand is hidden on larger screens, but visible when the menu is collapsed -->
+                <a class="navbar-brand" href="index.html">Business Casual</a>
+            </div>
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav" id="navActive">
+                    <li>
+                        <a href="inicio.html">Inicio</a>
+                    </li>
+                    <li>
+                        <a href="nosotros.html" id="activo">Nosotros</a>
+                    </li>
+                    <li>
+                        <a href="quesos.html">Quesos</a>
+                    </li>
+                    <li>
+                        <a href="nuestrosClientes.html">PerFil del Consumidor</a>
+                    </li>
+                    <li>
+                        <a href="pedidos.html">Pedidos</a>
+                    </li>
+                    <li>
+                        <a href="contactanos.html">Ubicación</a>
+                    </li>
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container -->
+    </nav>
+
+    <div class="container">
+
+        <div class="row">
+            <div class="box">
+                <div class="col-lg-12">
+                    <hr>
+                    <h2 class="intro-text text-center">Canchaque,
+                        <strong>Plaza de Armas</strong>
+                    </h2>
+                    <hr>
+                </div>
+                <div class="col-lg-12">
+              
+                	<!-- Start WOWSlider.com BODY section --> <!-- add to the <body> of your page -->
+                	<div id="wowslider-container0">
+                	<div class="ws_images"><ul>
+                		<li><img src="data0/images/canchaque.jpg" alt="Canchaque" title="Canchaque" id="wows0_0"/></li>
+                		<li><a href="http://wowslider.com"><img src="data0/images/plaza_de_armas_dia.jpg" alt="wow slider" title="Plaza de Armas (Dia)" id="wows0_1"/></a></li>
+                		<li><img src="data0/images/plaza_de_armas_noche.jpg" alt="Plaza de Armas (Noche)" title="Plaza de Armas (Noche)" id="wows0_2"/></li>
+                	</ul></div>
+                	<div class="ws_bullets"><div>
+                		<a href="#" title="Canchaque"><span><img src="data0/tooltips/canchaque.jpg" alt="Canchaque"/>1</span></a>
+                		<a href="#" title="Plaza de Armas (Dia)"><span><img src="data0/tooltips/plaza_de_armas_dia.jpg" alt="Plaza de Armas (Dia)"/>2</span></a>
+                		<a href="#" title="Plaza de Armas (Noche)"><span><img src="data0/tooltips/plaza_de_armas_noche.jpg" alt="Plaza de Armas (Noche)"/>3</span></a>
+                	</div></div><div class="ws_script" style="position:absolute;left:-99%"><a href="http://wowslider.com/vi">slider</a> by WOWSlider.com v8.7</div>
+                	<div class="ws_shadow"></div>
+                	</div>	
+                	<script type="text/javascript" src="engine0/wowslider.js"></script>
+                	<script type="text/javascript" src="engine0/script.js"></script>
+                	<!-- End WOWSlider.com BODY section -->
+
+                    <!--<img class="img-responsive img-border img-full cambiarBorder" src="img/bg.jpg" alt="">-->
+                    <h2 class="text-center">Canchaque
+                        <br>
+                        <small>Mayo 30, 2017</small>
+                    </h2>
+                    <p>Es uno de los ocho distritos que integran la provincia de Huancabamba, ubicada en el Departamento de Piura, bajo la administración del Gobierno Regional de Piura, en el norte del Perú. Limita por el norte con el Distrito de Lalaquiz y el Distrito de Huancabamba; por el este con el distrito de Sondorillo; por el sur con el Distrito de San Miguel del Faique; y por el oeste con la Provincia de Ayabaca.</p>
+                    <div class="text-center">
+                        <a href="#" class="btn btn-default btn-lg">Read More</a>
+                    </div>
+                    
+                    <hr>
+                </div>
+                <div class="col-lg-12">
+
+                  
+                	<!-- Start WOWSlider.com BODY section --> <!-- add to the <body> of your page -->
+                	<div id="wowslider-container1">
+                	<div class="ws_images"><ul>
+                		<li><img src="data1/images/los_tijerales_del_arte_culinario.jpg" alt="Los Tijerales del Arte Culinario" title="Los Tijerales del Arte Culinario" id="wows1_0"/></li>
+                		<li><a href="http://wowslider.com"><img src="data1/images/venta_de_quesos.jpg" alt="http://wowslider.com/" title="Venta de Quesos" id="wows1_1"/></a></li>
+                		<li><img src="data1/images/vacas_lecheras.jpg" alt="Vacas Lecheras" title="Vacas Lecheras" id="wows1_2"/></li>
+                	</ul></div>
+                	<div class="ws_bullets"><div>
+                		<a href="#" title="Los Tijerales del Arte Culinario"><span><img src="data1/tooltips/los_tijerales_del_arte_culinario.jpg" alt="Los Tijerales del Arte Culinario"/>1</span></a>
+                		<a href="#" title="Venta de Quesos"><span><img src="data1/tooltips/venta_de_quesos.jpg" alt="Venta de Quesos"/>2</span></a>
+                		<a href="#" title="Vacas Lecheras"><span><img src="data1/tooltips/vacas_lecheras.jpg" alt="Vacas Lecheras"/>3</span></a>
+                	</div></div><div class="ws_script" style="position:absolute;left:-99%"><a href="http://wowslider.com/vi">slider</a> by WOWSlider.com v8.7</div>
+                	<div class="ws_shadow"></div>
+                	</div>	
+                	<script type="text/javascript" src="engine1/wowslider.js"></script>
+                	<script type="text/javascript" src="engine1/script.js"></script>
+                	<!-- End WOWSlider.com BODY section -->
+                    
+                    <!--<img class="img-responsive img-border img-full cambiarBorder" src="img/galeria501.png" alt="">-->
+                    <h2 class="text-center">Piura, Los Tijerales del Arte Culinario
+                        <br>
+                        <small>Mayo 30, 2017</small>
+                    </h2>
+                    <p>Lid est laborum dolo rumes fugats untras. Etharums ser quidem rerum facilis dolores nemis omnis fugats vitaes nemo minima rerums unsers sadips amets. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</p>
+                    <div class="text-center">
+                        <a href="#" class="btn btn-default btn-lg">Read More</a>
+                    </div>
+                    <hr>
+                </div>
+                <div class="col-lg-12">
+                    <img class="img-responsive img-border img-full cambiarBorder" src="img/publicidad.jpg" alt="">
+                    <h2 class="text-center">Queso Artesano
+                        <br>
+                        <small>Mayo 30, 2017</small>
+                    </h2>
+                    <p>La elaboración de quesos artesanales, está implementada exclusivamente como un Sistema Agroalimentario, que se desarrolla en el distrito de Canchaque en los diferentes establecimientos ganaderos.</p>
+                    <!--<p>La elaboración artesanal de quesos se realiza a partir de leche cruda o mínimamente tratada, con la adición de agente coagulante de diversos orígenes, el agregado en algunas variedades de fermentos preparados a partir de cepas autóctonas, y tiempos de maduración diversos.</p>-->
+                    <p>La propuesta de elaborar un producto alimenticio sin perder las características artesanales, que resulte seguro y pueda ser tipificado y comercializado, y que permita el desarrollo de este sistema agroalimentario localizado, incluyó abordar el tema desde aspectos tecnológicos y sociales diversos, planteando esta situación bajo la premisa de respetar las materias primas y procedimientos artesanales, la calidad organoléptica original, la seguridad higiénico-sanitaria y la obtención de características comerciales uniformes.</p>
+                    <!--<p> Sobre estas bases, se condujeron cada uno de los estudios realizados hasta el momento para cada una de las etapas de elaboración a fin de obtener un producto con las particularidades deseadas. </p>-->
+                    <!--<p>Nuestro compromiso es ofrecer al consumidor un producto seguro y de calidad uniforme, 100% de leche natural y fresca, llegando ha establecer los mejores quesos de la región.</p>-->
+                    <hr>
+                </div>
+                <div class="col-lg-12 text-center">
+                    <ul class="pager">
+                        <li class="previous"><a href="#">&larr; Atrás</a>
+                        </li>
+                        <li class="next"><a href="#">Siguiente &rarr;</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="box">
+                <div class="col-lg-12">
+                    <hr>
+                    <h2 class="intro-text text-center">Nuestro
+                        <strong>Equipo</strong>
+                    </h2>
+                    <hr>
+                </div>
+                <div class="col-sm-4 text-center">
+                    <img class="img-responsive cambiarBorder" width="270" src="img/insignia1.jpg" alt="">
+                    <h3>Artesano Canchaque
+                        <small>Queso</small>
+                    </h3>
+                </div>
+                <div class="col-sm-4 text-center">
+                    <img class="img-responsive cambiarBorder" width="400" height="300" src="img/queso1.png" alt="">
+                    <h3>Artesano
+                        <small>Queso</small>
+                    </h3>
+                </div>
+                <div class="col-sm-4 text-center">
+                    <img class="img-responsive cambiarBorder" width="270" src="img/insignia2.jpg" alt="">
+                    <h3>Atesano Canchaque
+                        <small>Queso</small>
+                    </h3>
+                </div>
+                <div class="clearfix"></div>
+            </div>
+        </div>
+    </div>
+    <!-- /.container -->
+
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <p>Copyright &copy; Los Tijerales del Arte Culinario - 2017</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- jQuery -->
+    <script src="js/jquery.js"></script>
+
+
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="js/bootstrap.min.js"></script>
+
+    <script type="text/javascript" src="js/menuPegagozo.js"></script>
+
+</body>
+
+</html>
