@@ -95,7 +95,7 @@
             <div class="box cambiarBorder">
                 <div class="col-lg-12">
 
-                    <form role="form">
+                    <form id="pedidosForm" role="form">
                         <div class="row">
                             <div class="form-group col-lg-8">
                                 <hr>
@@ -107,22 +107,22 @@
                                 <div class="row">
                                     <div class="form-group col-lg-4">
                                         <label>Nombre</label>
-                                        <input type="text" class="form-control" placeholder="Ingrese Nombre">
+                                        <input name="name" type="text" class="form-control" placeholder="Ingrese Nombre">
                                     </div>
                                     <div class="form-group col-lg-4">
                                         <label>Correo Electrónico</label>
-                                        <input type="email" class="form-control" placeholder="Ingrese Email">
+                                        <input name="email" type="email" class="form-control" placeholder="Ingrese Email">
                                     </div>
                                     <div class="form-group col-lg-4">
                                         <label>Número de Teléfono</label>
-                                        <input type="tel" class="form-control">
+                                        <input name="phone" type="tel" class="form-control">
                                     </div>
                                 </div>
 
                                 <div class="row">
                                     <div class="form-group col-lg-4">
                                         <label>Queso</label>
-                                        <select class="form-control">
+                                        <select name="cheese" class="form-control">
                                             <option>Seleccione...</option>
                                             <option>Euro</option>
                                             <option>Criollo</option>
@@ -134,7 +134,7 @@
                                     </div>
                                     <div class="form-group col-lg-4">
                                         <label>Tipo de Queso</label>
-                                        <select class="form-control">
+                                        <select name="type_cheese" class="form-control">
                                             <option>Seleccione...</option>
                                             <option>Suave</option>
                                             <option>Blando</option>
@@ -143,7 +143,7 @@
                                     </div>
                                     <div class="form-group col-lg-4">
                                         <label>Peso</label>
-                                        <select class="form-control">
+                                        <select name="weight" class="form-control">
                                             <option>Seleccione...</option>
                                             <option>300 gr</option>
                                             <option>400 gr</option>
@@ -157,22 +157,22 @@
                                 <div class="row">
                                     <div class="form-group col-lg-4">
                                         <label>Cantidad</label>
-                                        <input type="number" class="form-control" min="1" max="100" step="1" value="1">
+                                        <input name="amount" type="number" class="form-control" min="1" max="100" step="1" value="1">
                                     </div>
                                     <div class="form-group col-lg-4">
                                         <label>Costo (S/)</label>
-                                        <input type="text" class="form-control" value="100" name="">
+                                        <input type="text" class="form-control" value="100" name="cost">
                                     </div>
                                     <div class="form-group col-lg-4">
                                         <label>Fecha</label>
-                                        <input type="date" class="form-control" name="">
+                                        <input type="date" class="form-control" name="date">
                                     </div>
                                 </div>
                                 <div class="row">
                                     <div class="clearfix"></div>
                                     <div class="form-group col-lg-12">
                                         <label>Descripción</label>
-                                        <textarea class="form-control" rows="6"></textarea>
+                                        <textarea name="description" class="form-control" rows="6"></textarea>
                                     </div>
                                 </div>
                             </div>
@@ -187,7 +187,7 @@
                             <div class="clearfix"></div>
                             <div class="form-group col-lg-12">
                                 <input type="hidden" name="save" value="contact">
-                                <button type="submit" class="btn btn-default">Enviar</button>
+                                <button id="contact"  type="submit" class="btn btn-default">Enviar</button>
                             </div>
                         </div>
                     </form>
@@ -214,6 +214,12 @@
 
     <!-- Bootstrap Core JavaScript -->
     <script src="js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="https://cdn.emailjs.com/dist/email.min.js"></script>
+<script type="text/javascript">
+   (function(){
+      emailjs.init("user_xt4YOEMzSTZgBjYIDXFfA");
+   })();
+</script>
 
 </body>
 
