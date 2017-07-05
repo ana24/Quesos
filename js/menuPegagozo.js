@@ -11,14 +11,8 @@ $(document).ready(function(){
 
 $("#contact").click(function  (e) {
 	e.preventDefault();
-	emailjs.sendForm("gmail", "template_myZ8ZahM","pedidosForm")
-.then(
-  function(response) {
-    console.log("SUCCESS", response);
-  }, 
-  function(error) {
-    console.log("FAILED", error);
-  }
-);
+	//emailjs.sendForm("gmail", "template_myZ8ZahM","pedidosForm");
+    $("#pedidosForm")[0].reset();
+    $("#myModal").modal();
 
-})
+});
