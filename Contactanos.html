@@ -32,7 +32,12 @@
     <link rel="stylesheet" href="css/font.css">
     <link rel="stylesheet" href="css/main.css">
     <link rel="shortcut icon" type="image/x-icon" href="img/mifavicon.ico" />
-
+    <script type="text/javascript" src="https://cdn.emailjs.com/dist/email.min.js"></script>
+    <script type="text/javascript">
+        (function(){
+        emailjs.init("user_NjZKQsttJYytPNjyHucDO");
+        })();
+    </script>
 </head>
 
 <body>
@@ -114,7 +119,7 @@
                         <strong>968885555</strong>
                     </p>
                     <p>Email:
-                        <strong><a href="mailto:name@example.com">centroartesanalnorte@gmail.com</a></strong>
+                        <strong><a href="mailto:lostijerales@gmail.com">lostijerales@gmail.com</a></strong>
                     </p>
                     <p>Dirección:
                         <strong>Libertad 501
@@ -134,7 +139,8 @@
                     </h2>
                     <hr>
                     <p>Para cualquier consulta proporcione los siguientes datos que nosotros le responderemos en menos de 24 horas.</p>
-                    <form method="POST" action="form-handler-nodb.php" role="form"> <!--agregue method y post para trabajar sin bd -->
+                    <!--<form method="POST" action="form-handler-nodb.php" role="form"> agregue method y post para trabajar sin bd -->
+                    <form method="POST" action="mailto:lostijerales@gmail.com" role="form">
                         <div class="row">
                             <div class="form-group col-lg-4">
                                 <label>Nombre</label>
@@ -146,7 +152,7 @@
                             </div>
                             <div class="form-group col-lg-4">
                                 <label>Número de Teléfono</label>
-                                <input type="tel" class="form-control">
+                                <input type="tel" class="form-control" maxlength="9">
                             </div>
                             <div class="clearfix"></div>
                             <div class="form-group col-lg-12">
@@ -163,7 +169,7 @@
             </div>
         </div>
     </div>
-    <!-- /.container -->
+    
 
     <footer>
         <div class="container">
