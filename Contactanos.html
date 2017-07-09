@@ -76,8 +76,16 @@
                     <li>
                         <a href="nosotros.html">Nosotros</a>
                     </li>
-                    <li>
-                        <a href="quesos.html">Quesos</a>
+                    <li class="dropdown">
+                        <a href="quesos.html" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Quesos<span class="caret"></span></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="quesoAndino.html">Andino</a></li>
+                            <li><a href="queso_euro.html">Criollo</a></li>
+                            <li><a href="queso_euro.html">Euro</a></li>
+                            <li><a href="queso_euro.html">Paria</a></li>
+                            <li><a href="queso_euro.html">Parmesano</a></li>
+                            <li><a href="queso_euro.html">Suizo</a></li>
+                        </ul>
                     </li>
                     <li>
                         <a href="perfilConsumidor.html">PerFil del Consumidor</a>
@@ -127,45 +135,6 @@
                     </p>
                 </div>
                 <div class="clearfix"></div>
-            </div>
-        </div>
-
-        <div class="row">
-            <div class="box">
-                <div class="col-lg-12">
-                    <hr>
-                    <h2 class="intro-text text-center">Formulario para
-                        <strong>contacto</strong>
-                    </h2>
-                    <hr>
-                    <p>Para cualquier consulta proporcione los siguientes datos que nosotros le responderemos en menos de 24 horas.</p>
-                    <!--<form method="POST" action="form-handler-nodb.php" role="form"> agregue method y post para trabajar sin bd -->
-                    <form method="POST" action="mailto:lostijerales@gmail.com" role="form">
-                        <div class="row">
-                            <div class="form-group col-lg-4">
-                                <label>Nombre</label>
-                                <input type="text" class="form-control">
-                            </div>
-                            <div class="form-group col-lg-4">
-                                <label>Correo Electrónico</label>
-                                <input type="email" class="form-control">
-                            </div>
-                            <div class="form-group col-lg-4">
-                                <label>Número de Teléfono</label>
-                                <input type="tel" class="form-control" maxlength="9">
-                            </div>
-                            <div class="clearfix"></div>
-                            <div class="form-group col-lg-12">
-                                <label>Mensaje</label>
-                                <textarea class="form-control" rows="6"></textarea>
-                            </div>
-                            <div class="form-group col-lg-12">
-                                <input type="hidden" name="save" value="contact">
-                                <button id="contact" type="submit" class="btn btn-default">Enviar</button>
-                            </div>
-                        </div>
-                    </form>
-                </div>
             </div>
         </div>
     </div>
