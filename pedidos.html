@@ -59,7 +59,7 @@
                     <span class="icon-bar"></span>
                 </button>
                 <!-- navbar-brand is hidden on larger screens, but visible when the menu is collapsed -->
-                <a class="navbar-brand" href="index.html">Business Casual</a>
+                <a class="navbar-brand tamFuente" href="index.html">Los Tijerales del Arte Culinario</a>
             </div>
             <!-- Collect the nav links, forms, and other content for toggling -->
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
@@ -108,7 +108,7 @@
                              <div class="form-group col-lg-4">
                                 <div class="row">
                                    <div class="col-lg-12 text-center"><br><br>
-                                        <img class="cambiarBorder cambiarEscala" src="img/publicidad2.jpg">
+                                        <img class="cambiarBorder cambiarEscala img-posicion" src="img/publicidad2.jpg">
                                     </div> 
                                 </div>
                             </div>
@@ -122,16 +122,18 @@
                                 <div class="row">
                                     <div class="form-group col-lg-4">
                                         <label>Nombre</label>
-                                        <input name="name" type="text" class="form-control" placeholder="Ingrese Nombre">
+                                        <input id="itNombre" name="name" type="text" class="form-control" placeholder="Ingrese Nombre">
+                                        <div id="mensaje1" class="errores">Escriba su nombre</div>
                                     </div>
                                     <div class="form-group col-lg-4">
                                         <label>Correo Electrónico</label>
-                                        <input name="email" type="email" class="form-control" placeholder="Ingrese Email">
+                                        <input id="itEmail" name="email" type="email" class="form-control" placeholder="Ingrese Email">
+                                        <div id="mensaje2" class="errores">Escriba su correo electrónico</div>
                                     </div>
                                     <div class="form-group col-lg-4">
                                         <label>Número de Teléfono</label>
-                                        <input name="phone" type="tel" class="form-control" maxlength="12">
-
+                                        <input id="itTelefono" name="phone" type="tel" class="form-control" maxlength="12">
+                                        <div id="mensaje3" class="errores">Escriba su telefono</div>
                                     </div>
                                 </div>
 
@@ -174,7 +176,7 @@
                                     <div class="form-group col-lg-4">
                                         <label>Cantidad</label>
 
-                                        <input name="amount" type="number" class="form-control" min="1" max="100" step="1" value="1"  maxlength="3">
+                                        <input name="amount" type="number" class="form-control" min="1" max="50" step="1" value="1"  maxlength="2">
 
                                     </div>
                                     <div class="form-group col-lg-4">
@@ -186,7 +188,7 @@
                                     <div class="clearfix"></div>
                                     <div class="form-group col-lg-12">
                                         <label>Mensaje</label>
-                                        <textarea name="message" class="form-control" rows="6"></textarea>
+                                        <textarea name="message" class="form-control" rows="4"></textarea>
 
                                     </div>
                                 </div>
@@ -209,7 +211,12 @@
         <div class="container">
             <div class="row">
                 <div class="col-lg-12 text-center">
-                    <p>Copyright &copy; Los Tijerales del Arte Culinario - 2017</p>
+                    <br>
+                    <a href="https://www.facebook.com/Queso-Fresco-Especial-Canchaque-725553264288187/"><img src="img/facebook-wrap.png" alt="Facebook logo" class="social-icon"></a>
+                    <a href="https://twitter.com/"><img src="img/twitter-wrap.png" alt="Twitter Logo" class="social-icon"></a>
+                    <a href="https://www.youtube.com/"><img src="img/youtube-grey.png" alt="YouTube Logo" class="social-icon"></a>
+                    <br>
+                    <small>Copyright &copy; Los Tijerales del Arte Culinario - 2017</small>
                 </div>
             </div>
         </div>
@@ -248,6 +255,22 @@
    (function(){
       emailjs.init("user_xt4YOEMzSTZgBjYIDXFfA");
    })();
+</script>
+
+<script>
+    var expr = /^[a-zA-Z0-9_\.\-]+@[a-zA-Z0-9\-]+\.[a-zA-Z0-9\-\.]+$/;
+    $(document).ready(function(){
+        $("#contact").click(function(){
+            var nombre = $("itNombre").val();
+            var email = $("itEmail").val();
+            var telefono = $("itTelefono").val();
+
+            if (nombre==""){
+                $("#mensaje1").fadeIn();
+                return false;
+            };
+        });
+    });
 </script>
 
 </body>

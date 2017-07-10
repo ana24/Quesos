@@ -40,3 +40,31 @@
 .btn-posicion{
 	float: right;
 }
+
+/*errores*/
+.errores{
+	-webkit -box-shadow: 0 0 10px rgba(0,0,0,0.3);
+	-moz -box-shadow: 0 0 10px rgba(0,0,0,0.3);
+	-o -box-shadow: 0 0 10px rgba(0,0,0,0.3);
+	background: red;
+	box-shadow: 0 0 10px rgba(0,0,0,0.3);
+	color: #fff;
+	display: none;/*al principio no aparece mensaje error*/
+	font-size: 14px;
+	margin-top: -80px;
+	margin-left: 340px;
+	padding: 10px;
+	position: absolute;
+}
+
+/*dispositivos mobiles*/
+.tamFuente{
+	font-size: 85%;
+}
+
+/*FOOTER*/
+.social-icon {
+  width: 20px;
+  height: 20px;
+  margin: 0 5px;
+}
