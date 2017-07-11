@@ -93,12 +93,13 @@ $('#cheese').on('change', function() {
         calcularCosto();
     }
 });
-$('#weight').on('change', function() {
+$('#weight, #typeCheese').on('change', function() {
     var valor = this.value;
     if(valor!="") {
         calcularCosto();
     }
 });
+
 function llenarComboTiposQueso() {
 	var res = getQuesoSel();
 	var tipos = res.tipos;
