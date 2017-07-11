@@ -166,12 +166,12 @@
                                     <div class="form-group col-lg-4">
                                         <label>Peso</label>
                                         <select name="weight" class="form-control">
-                                            <option>Seleccione...</option>
-                                            <option>300 gr</option>
-                                            <option>400 gr</option>
-                                            <option>500 gr</option>
-                                            <option>700 gr</option>
-                                            <option>800 gr</option>
+                                            <option value="">Seleccione...</option>
+                                            <option value=300>300 gr</option>
+                                            <option value="400">400 gr</option>
+                                            <option value="500">500 gr</option>
+                                            <option value="700">700 gr</option>
+                                            <option value="800">800 gr</option>
                                         </select>
                                     </div>
                                 </div>
@@ -180,7 +180,7 @@
                                     <div class="form-group col-lg-4">
                                         <label>Cantidad</label>
 
-                                        <input name="amount" type="number" class="form-control" min="1" max="50" step="1" value="1"  maxlength="2">
+                                        <input name="amount" type="number" class="form-control" min="1" onkeypress='return event.charCode >= 48 && event.charCode <= 57' max="50" step="1" value="1"  maxlength="2">
 
                                     </div>
                                     <div class="form-group col-lg-4">

@@ -4,7 +4,7 @@ var quesos = [
 		tipos:[
 			{
 				nombre: "Normal",
-				precio: 0
+				precio: 10
 			}
 		]
 	},
@@ -13,11 +13,11 @@ var quesos = [
         tipos:[
         	{
 				nombre:"Suave",
-				precio: 0
+				precio: 20
 			},
 			{
 				nombre:"Blando",
-				precio:0
+				precio: 80
 			}
 			]
     },
@@ -26,25 +26,25 @@ var quesos = [
         tipos:[
         	{
 				nombre:"Blando",
-				precio: 0
+				precio: 35
         	},
             {
                 nombre:"Semiduro",
-                precio:0
+                precio: 12
             }]
     },
     {
         nombre :"Paria",
         tipos:[{
             nombre: "Normal",
-            precio: 0
+            precio: 19
         }]
     },
     {
         nombre :"Suizo",
         tipos:[{
             nombre: "Normal",
-            precio: 0
+            precio: 12
         }]
     },
     {
@@ -52,11 +52,11 @@ var quesos = [
         tipos:[
         	{
             nombre:"Criollo",
-            precio: 0
+            precio: 12
         	},
             {
                 nombre:"Andino",
-                precio: 0
+                precio: 17
             }
 		]
     }
@@ -82,6 +82,10 @@ $("#pedidosForm").on("submit",function  (e) {
 
 });
 
+/*
+* Inicio eventos de comboBox en pedidos
+*
+*/
 $('#cheese').on('change', function() {
     var valor = this.value;
     if(valor!="") {
@@ -99,8 +103,6 @@ function llenarComboTiposQueso(queso) {
     tipos.forEach( function(valor, indice) {
         console.log("En el índice " + indice + " hay este valor: " + valor);
         var itemval= '<option value="'+valor.nombre+'">'+valor.nombre+'</option>';
-
-
         $("#typeCheese").append(itemval);
     });
 }
@@ -108,4 +110,23 @@ function llenarComboTiposQueso(queso) {
 function buscarQueso(queso) {
     var value = $('#cheese').val();
 	return queso.nombre === value;
+}
+
+/*
+ * Fin eventos de comboBox en pedidos
+ *
+ */
+
+$('input[name=amount]').keyup(function() {
+    var weight = $('#weight').val();
+    console.log(weight)
+    if(esNumero(this.value)){
+        console.log(this.value);
+    }
+
+
+});
+
+function esNumero(n) {
+    return !isNaN(parseFloat(n)) && isFinite(n);
 }
