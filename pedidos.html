@@ -28,21 +28,11 @@
         <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
     <![endif]-->
     <link rel="stylesheet" type="text/css" href="css/misEstilos.css">
-    <!--Estilos para barra de redes sociales-->
-    <link rel="stylesheet" href="css/font.css">
-    <link rel="stylesheet" href="css/main.css">
+    <!--Icono de la pagina-->
     <link rel="shortcut icon" type="image/x-icon" href="img/mifavicon.ico" />
 </head>
 
 <body>
-
-    <!--Barra de Redes Sociales-->
-    <div class="social-bar">
-        <a href="https://www.facebook.com/Queso-Fresco-Especial-Canchaque-725553264288187/" class="icon icon-facebook" target="_blank"></a>
-        <a href="https://twitter.com/DevCodela" class="icon icon-twitter" target="_blank"></a>
-        <a href="https://www.youtube.com/c/devcodela" class="icon icon-youtube" target="_blank"></a>
-        <a href="https://www.instagram.com/devcodela/" class="icon icon-instagram" target="_blank"></a>
-    </div>
 
     <div class="brand">Queso Artesano Canchaqueño</div>
     <div class="address-bar">Libertad 501 | Los Tijerales del Arte Culinario, Piura | Tel. 978263726</div>
@@ -158,20 +148,18 @@
                                         <label>Tipo de Queso</label>
                                         <select id="typeCheese" name="type_cheese" class="form-control">
                                             <option>Seleccione...</option>
-                                            <option>Suave</option>
-                                            <option>Blando</option>
-                                            <option>Semi-Duro</option>
+
                                         </select>
                                     </div>
                                     <div class="form-group col-lg-4">
                                         <label>Peso</label>
-                                        <select name="weight" class="form-control">
-                                            <option>Seleccione...</option>
-                                            <option>300 gr</option>
-                                            <option>400 gr</option>
-                                            <option>500 gr</option>
-                                            <option>700 gr</option>
-                                            <option>800 gr</option>
+                                        <select id="weight" name="weight" class="form-control">
+                                            <option value="">Seleccione...</option>
+                                            <option value=300>300 gr</option>
+                                            <option value="400">400 gr</option>
+                                            <option value="500">500 gr</option>
+                                            <option value="700">700 gr</option>
+                                            <option value="800">800 gr</option>
                                         </select>
                                     </div>
                                 </div>
@@ -180,12 +168,12 @@
                                     <div class="form-group col-lg-4">
                                         <label>Cantidad</label>
 
-                                        <input name="amount" type="number" class="form-control" min="1" max="50" step="1" value="1"  maxlength="2">
+                                        <input id="amount" name="amount" type="number" class="form-control" min="1" onkeypress='return event.charCode >= 48 && event.charCode <= 57' max="50" step="1" value="1"  maxlength="2">
 
                                     </div>
                                     <div class="form-group col-lg-4">
                                         <label>Costo (S/)</label>
-                                        <input type="text" class="form-control" value="100" name="cost">
+                                        <input id="cost" type="text" class="form-control" value="100" name="cost">
                                     </div>
                                 </div>
                                 <div class="row">
@@ -259,22 +247,6 @@
    (function(){
       emailjs.init("user_xt4YOEMzSTZgBjYIDXFfA");
    })();
-</script>
-
-<script>
-    var expr = /^[a-zA-Z0-9_\.\-]+@[a-zA-Z0-9\-]+\.[a-zA-Z0-9\-\.]+$/;
-    $(document).ready(function(){
-        $("#contact").click(function(){
-            var nombre = $("itNombre").val();
-            var email = $("itEmail").val();
-            var telefono = $("itTelefono").val();
-
-            if (nombre==""){
-                $("#mensaje1").fadeIn();
-                return false;
-            };
-        });
-    });
 </script>
 
 </body>
