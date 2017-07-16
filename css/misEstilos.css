@@ -13,13 +13,15 @@
 	-moz-transform: scale(1.05);
     -webkit-transform: scale(1.05);
 }
+
 #navActive li a:hover{
-	background: #ffffff;
+	background: #0097a7;
+	color:white;
 }
 
 #activo{
-	color: black;
-	background-color: #ccc;
+	color: white;/*black*/
+	background-color: #00838f;/*ccc*/
 }
 
 .img-posicion{
