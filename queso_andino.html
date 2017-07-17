@@ -9,10 +9,10 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>Queso Euro</title>
+    <title>Queso Andino</title>
 
     <!-- Bootstrap Core CSS -->
-    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/bootstrap.css" rel="stylesheet">
 
     <!-- Custom CSS -->
     <link href="css/business-casual.css" rel="stylesheet">
@@ -49,7 +49,7 @@
 <body>
 
     <div class="brand">Queso Artesano Canchaqueño</div>
-    <div class="address-bar">Libertad 501 | Los Tijerales del Arte Culinario, Piura | Tel. 978263726</div>
+    <div class="address-bar">Libertad 501 | Los Tijerales del Arte Culinario, Piura</div>
 
     <!-- Navigation -->
     <nav class="navbar navbar-default menu" role="navigation">
@@ -75,18 +75,22 @@
                         <a href="nosotros.html"  data-toggle="dropdown">Nosotros <span class="caret"></span></a>
                         <ul class="dropdown-menu">
                             <li><a href="piura.html">. Piura</a></li>
+                            <div class="divider"></div>
                             <li><a href="canchaque.html">. Canchaque</a></li>
                         </ul>
                     </li>
                     <li class="dropdown">
                         <a id="activo" href="quesos.html" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Quesos<span class="caret"></span></a>
                         <ul class="dropdown-menu">
-                            <li><a href="quesoAndino.html">Andino</a></li>
-                            <li><a href="queso_euro.html">Criollo</a></li>
-                            <li><a href="queso_euro.html">Euro</a></li>
-                            <li><a href="queso_euro.html">Paria</a></li>
-                            <li><a href="queso_euro.html">Parmesano</a></li>
-                            <li><a href="queso_euro.html">Suizo</a></li>
+                            <li><a href="queso_andino.html" id="activo">. Andino</a></li>
+                            <div class="divider"></div>
+                            <li><a href="queso_criollo.html">. Criollo</a></li>
+                            <div class="divider"></div>
+                            <li><a href="queso_euro.html">. Euro</a></li>
+                            <div class="divider"></div>
+                            <li><a href="queso_paria.html">. Paria</a></li>
+                            <div class="divider"></div>
+                            <li><a href="queso_parmesano.html">. Parmesano</a></li>
                         </ul>
                     </li>
                     <li>
@@ -105,19 +109,24 @@
         <!-- /.container -->
     </nav>
 
-    <div class="container">
+    <div class="container" id="descripcion">
 
         <div class="row">
             <div class="box">
-                <div class="col-lg-12">
-                    <hr>
-                    <h2 class="intro-text text-center"><span class="glyphicon glyphicon-picture"></span> Historia,
-                        <strong>Queso Euro</strong>
-                    </h2>
-                    <hr>
-                </div>
-                
-                
+                <div class="row">
+                        <div class="col-md-11">
+                            <hr>
+                            <h2 class="intro-text text-center"><span class="glyphicon glyphicon-picture"></span> Descripción,
+                                <strong>Queso Andino</strong>
+                            </h2>
+                            <hr>
+                        </div>
+                        <div class="col-md-1">
+                            <br/><br/>
+                            <a href="#ingredientes" title="Siguiente"><span class="glyphicon glyphicon-menu-down"></span></a>
+                        </div>
+                    </div>
+
                 <div class="col-lg-12">
                     <div class="row text-center">
                         <!-- Start WOWSlider.com BODY section --> <!-- add to the <body> of your page -->
@@ -139,48 +148,40 @@
                 <script type="text/javascript" src="engine/engine0/wowslider.js"></script>
                 <script type="text/javascript" src="engine/engine0/script.js"></script>
                 <!-- End WOWSlider.com BODY section -->
-                    </div><br/>
-                    <div class="row" style="margin:0px 70px; font-size: 14px;" align="justify">
-                        <p>This is a great place to introduce your company or project and describe what you do.Lid est laborum dolo rumes fugats untras. Etharums ser quidem rerum facilis dolores nemis omnis fugats vitaes nemo minima rerums unsers sadips amets. Lid est laborum dolo rumes fugats untras. Etharums ser quidem rerum facilis dolores nemis omnis fugats vitaes nemo minima rerums unsers sadips amets</p>
-                    <p>Lid est laborum dolo rumes fugats untras. Etharums ser quidem rerum facilis dolores nemis omnis fugats vitaes nemo minima rerums unsers sadips amets. Lid est laborum dolo rumes fugats untras. Etharums ser quidem rerum facilis dolores nemis omnis fugats vitaes nemo minima rerums unsers sadips amets </p>
-                    <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Lid est laborum dolo rumes fugats untras. Etharums ser quidem rerum facilis dolores nemis omnis fugats vitaes nemo minima rerums unsers sadips amets.</p>
                     </div>
-                    <hr>
+                    <h2 class="text-center">Queso Andino
+                        <br>
+                        <small>Mayo 30, 2017</small>
+                    </h2>
+                    <div class="row" style="margin:0px 7%; font-size: 14px;" align="justify">
+                        <p>Queso andino, más conocido como queso serrano peruano, tiene una textura blanda y mantecosa, de color blanco amarillento, consistente y fácil de cortar, de corteza delgada y firme pero no dura, de sabor láctico suave y olor característico suave. Elaborado con leche fresca entera pasteurizada, acidificado por cultivos de bacterias lácticas.</p>
+                        <p> Uso del Producto: Ideal para el desayuno en sándwich, en piqueos, galletas, jamonada, choclo, ensaladas, para complementar la pizza, fondue, etc.</p>
+                    </div>
+                    <hr id="ingredientes">
                 </div>
                 
             </div>
 
             <div class="box">
                 <div class="col-lg-12">
-                    <hr>
-                    <h2 class="intro-text text-center"><span class="glyphicon glyphicon-list-alt"></span> Preparación,
-                        <strong>Ingredientes</strong>
-                    </h2>
-                    <hr>
+                    <div class="row">
+                        <div class="col-md-11">
+                            <hr>
+                            <h2 class="intro-text text-center"><span class="glyphicon glyphicon-picture"></span> Galería,
+                                <strong>Ingredientes</strong>
+                            </h2>
+                            <hr>
+                        </div>
+                        <div class="col-md-1">
+                            <br/><br/>
+                            <a href="#preparacion" title="Siguiente"><span class="glyphicon glyphicon-menu-down"></span></a>
+                            <a href="#descripcion" title="Anterior"><span class="glyphicon glyphicon-menu-up"></span></a>
+                        </div>
+                    </div>
                 </div>
                 
-                
                 <div class="col-lg-12">
-                    <div class="row">
-                        <div class="col-md-6">
-                            <ul style="margin-left: 150px; font-size: 17px">
-                                    <li>Leche Fresca</li>
-                                    <li>Balde</li>
-                                    <li>Porongo</li>
-                                    <li>Lira</li>
-                                    <li>Termómetro</li>
-                                </ul>
-                        </div>
-                        <div class="col-md-6">
-                            <ul style="margin-left: 150px; font-size: 17px">
-                                    <li>Cuajo</li>
-                                    <li>Cloruro de Calcio</li>
-                                    <li>Cocina</li>
-                                    <li>Sal</li>
-                                    <li>Balanza</li>
-                                </ul>
-                        </div>
-                    </div><br/>
+                    
                     <div class="row">
                         <div class="col-lg-12 text-center">
                             <!-- Start WOWSlider.com BODY section --> <!-- add to the <body> of your page -->
@@ -205,60 +206,56 @@
                 <script type="text/javascript" src="engine/engine1/script.js"></script>
                 <!-- End WOWSlider.com BODY section -->
                         </div>
-                    </div><br/>
-                    <div class="row">
-                        <div class="col-md-12">
-                            <hr>
-                                <h2 class="intro-text text-center"><span class="glyphicon glyphicon-cutlery"></span> 
-                                    <strong>Preparación</strong>, Pasos
-                                </h2>
-                                <hr>
-                        </div>
-                        <!--<div class="col-md-6">
-                            <img src="img/quesos.jpg" width="500">
-                        </div>-->
                     </div>
-                    <div class="row" align="justify">
-                                
-                                <ol style="margin:0px 70px; font-size: 17px;">
-                                    <li><strong>Pausterizar Baño María (65°) </strong>, La leche depositada en el porongo, se deja hervir con una temperatura de 65°.
-                                    </li></p>
-                                     <li><strong>Reposo de 65° a 35°</strong>, La leche se deja reposar con tiempo de 30 minutos, con el fin de disminuir su temperatura a 35°.
-                                    </li></p>
-                                    <li><strong>Cortado de la leche</strong>, En la leche depositada en un balde, se agrega dos productos especialmente para el cortado de la leche:
-                                    <ul>
-                                        <li>Cloruro de Calcio (55 ml)</li>
-                                        <li>Cuajo (0.23 gr)</li>
-                                    </ul>
-                                    </li></p>
-                                    <li><strong>Dejar 40 minutos para el corte de la leche</strong>, Se deja en reposo durante 40 minutos para el cortado de la leche, obteniendo la separación del suero y el cortado de la leche.
-                                    </li></p>
-                                    <li><strong>Agitar la leche cortada</strong>, Mediante una herramienta llamada Lira, se agita la leche cortada, ya pasada los 40 minutos.
-                                    </li></p>
-                                    <li><strong>Reposo de la leche cortada</strong>, Se deja reposar la leche cortada durante 1 hora con el fin de asentar el queso formado por el cortado de la leche.
-                                    </li>
-                                    <li><strong>Extraer el suero</strong>, Se extrae el suero en un depósito formado por el corte de la leche, dejando el queso en el mismo balde depositado.
-                                    </li></p>
-                                    <li><strong>Calentar Baño María a 38°</strong>, Mediante el uso de una cocina, se calienta el queso formado a una temperatura de 38°.
-                                    </li></p>
-                                    <li><strong>Agregar la sal</strong>, Se agrega la sal dentro del queso, para luego agitar dentro del depósito.
-                                    </li></p>
-                                    <li><strong>Depositar el queso en portabiandas</strong>, Finalmente el queso ya ha sido preparado, se lleva a cabo guardar el queso en depósitos llamadas portabiandas.
-                                    </li>
-                                </ol>
-                            </div>
-                            <hr>
+                    <h2 class="text-center">Ingredientes
+                        <br>
+                        <small>Mayo 30, 2017</small>
+                    </h2>
+
+                    <div class="row" style="border:1px solid #bbb; margin:0px 7%; padding: 2% 1%; border-radius: 5px; -webkit-box-shadow: 6px 4px 6px 0px rgba(199,185,199,0.66);
+-moz-box-shadow: 6px 4px 6px 0px rgba(199,185,199,0.66);
+box-shadow: 6px 4px 6px 0px rgba(199,185,199,0.66);">
+                        <div class="col-md-6">
+                            <ul style="font-size: 17px; margin:0px 20%;">
+                                    <li>Leche Fresca</li>
+                                    <li>Balde</li>
+                                    <li>Porongo</li>
+                                    <li>Lira</li>
+                                    <li>Termómetro</li>
+                                </ul>
+                        </div>
+                        <div class="col-md-6">
+                            <ul style=" font-size: 17px; margin:0px 7%;">
+                                    <li>Cuajo</li>
+                                    <li>Cloruro de Calcio</li>
+                                    <li>Cocina</li>
+                                    <li>Sal</li>
+                                    <li>Balanza</li>
+                                </ul>
+                        </div>
+                    </div>
+
+                    <hr id="preparacion">
                 </div>
                 
             </div>
 
             <div class="box">
                 <div class="col-lg-12">
-                    <hr>
-                    <h2 class="intro-text text-center"><span class="glyphicon glyphicon-picture"></span> Galería,
-                        <strong>Preparación</strong>
-                    </h2>
-                    <hr>
+
+                    <div class="row">
+                        <div class="col-md-11">
+                            <hr>
+                            <h2 class="intro-text text-center"><span class="glyphicon glyphicon-picture"></span> Galería,
+                                <strong>Preparación</strong>
+                            </h2>
+                            <hr>
+                        </div>
+                        <div class="col-md-1">
+                            <br/><br/>
+                            <a href="#ingredientes" title="Siguiente"><span class="glyphicon glyphicon-menu-up"></span></a>
+                        </div>
+                    </div>
                 </div>
                 <div class="col-lg-12">
                     <div class="row text-center">
@@ -292,17 +289,42 @@
                                 <a href="#" title="Quesos en portabiandas"><span><img src="img/data2/tooltips/quesos1.jpg" alt="Quesos en portabiandas"/>11</span></a>
                                 <a href="#" title="Queso Euro Terminado"><span><img src="img/data2/tooltips/quesos2.jpg" alt="Queso Euro Terminado"/>12</span></a>
                 </div></div><div class="ws_script" style="position:absolute;left:-99%"><a href="http://wowslider.com/vi">slider</a> by WOWSlider.com v8.7</div>
-                <hr>
+                
                 <div class="ws_shadow"></div>
                 </div>  
                 <script type="text/javascript" src="engine/engine2/wowslider.js"></script>
                 <script type="text/javascript" src="engine/engine2/script.js"></script>
                 <!-- End WOWSlider.com BODY section -->
-
-
                     </div>
+                    <h2 class="text-center"><span class="glyphicon glyphicon-cutlery"></span> Preparación
+                        <br>
+                        <small>Mayo 30, 2017</small>
+                    </h2>
                 </div>
-                
+
+                <div class="col-lg-12">
+                    <div class="row" align="justify" style="border:1px solid #bbb; margin:0px 7%; padding: 2% 1%; border-radius: 5px; -webkit-box-shadow: 6px 4px 6px 0px rgba(199,185,199,0.66);
+-moz-box-shadow: 6px 4px 6px 0px rgba(199,185,199,0.66);
+box-shadow: 6px 4px 6px 0px rgba(199,185,199,0.66);">
+                                
+                                <ol style="margin:0px 1%; font-size: 17px;">
+                                    <li><strong>Colar la leche </strong>, El colado de la leche es la extracción de pequeñas materiales que no son pertenecientes a la preparación de quesos.
+                                    </li></p>
+                                     <li><strong>Añadir el cuajo y mezclar</strong>, Añadimos el cuajo para luego ser mezclado o agitar la leche usando la lira para que el proceso del corte sea exitosa.
+                                    </li></p>
+                                    <li><strong>Reposo de 30 minutos</strong>, Dejar reposar por un tiempo de 30 minutos para que se produsca el corte de la leche.
+                                    </li></p>
+                                    <li><strong>Retirar el suero</strong>, Se retira el suero del depósito que se encuentra la leche cuajada.
+                                    </li></p>
+                                    <li><strong>Hechar el queso en los depósitos</strong>, Se deposita los quesos en las portabiandas ya para el proceso de venta de los quesos.
+                                    </li></p>
+                                    <li><strong>Guardar los quesos hasta el dia siguiente</strong>, Se deja reposar los quesos de las portabiandas hasta el día siguiente, con el fin de endurecer y madurar los quesos. ¡Y listo para el consumo de nuestro queso andino!.
+                                    </li>
+                                </ol>
+                            </div>
+                            <hr>
+                </div>
+                            
             </div>
         </div>
 
