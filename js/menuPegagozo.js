@@ -195,3 +195,32 @@ jQuery(document).ready(function(){
     $('html, body').animate({ scrollTop : $( href ).offset().top }, 'slow');
     });
 });
+
+
+//Obtener la fecha actual en JavaScript
+
+function fechaActual(){
+    var hoy = new Date();
+    var dd = hoy.getDate();
+    var mm = hoy.getMonth()+1; //hoy es 0!
+    var yyyy = hoy.getFullYear();
+    if(dd<10) {
+        dd='0'+dd
+    } 
+
+    if(mm<10) {
+        mm='0'+mm
+    }
+
+    hoy = mm+'/'+dd+'/'+yyyy;
+    var meses = ["Enero", "Febrero", "Marzo", "Abril", "Mayo", "Junio", "Julio", "Agosto", "Septiembre", "Octubre",
+        "Noviembre", "Diciembre"];
+    
+    hoy=meses[mm-1]+' '+dd+', '+yyyy;
+    return hoy;
+}
+var f=document.getElementsByClassName("fechaHoy");
+
+for (var i = 0; i < f.length; i++) {
+    f[i].innerHTML=fechaActual();
+}
