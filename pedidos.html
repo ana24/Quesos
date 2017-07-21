@@ -38,6 +38,11 @@
     <link rel="stylesheet" type="text/css" href="css/misEstilos.css">
     <!--Icono de la pagina-->
     <link rel="shortcut icon" type="image/x-icon" href="img/mifavicon.ico" />
+
+    <link rel="stylesheet" type="text/css" href="css/arriba.css">
+    <link rel="stylesheet" href="fonts/font-awesome/css/font-awesome.css"> 
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+    <script type="text/javascript"src="js/arriba.js"></script>
 </head>
 
 <body>
@@ -57,7 +62,7 @@
                     <span class="icon-bar"></span>
                 </button>
                 <!-- navbar-brand is hidden on larger screens, but visible when the menu is collapsed -->
-                <a class="navbar-brand tamFuente" href="index.html" title="Queso Artesano Canchaqueño">Quesos Artesanales, Piura</a>
+                <a class="navbar-brand tamFuente" href="index.html" title="Queso Artesano Canchaqueño">Quesos Artesanales</a>
             </div>
             <!-- Collect the nav links, forms, and other content for toggling -->
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
@@ -119,25 +124,27 @@
                                 </div>
                             </div>
                             <div class="form-group col-lg-8">
-                                <hr>
-                                <h2 class="intro-text text-center cambiarEscala">Formulario para
-                                <strong>contacto</strong>
-                                </h2>
-                                <hr>
-                                <p>Para cualquier consulta proporcione los siguientes datos que nosotros le responderemos en menos de 24 horas.
+                                <center>
+                                    <hr>
+                                    <h2 class="intro-text text-center cambiarEscala"> <span class="glyphicon glyphicon-envelope"></span> Formulario para
+                                    <strong>contacto</strong>
+                                    </h2>
+                                    <hr>
+                                </center>
+                                <p align="justify">Para cualquier consulta proporcione los siguientes datos que nosotros le responderemos en menos de 24 horas.
                                 <div class="row">
                                     <div class="form-group col-lg-4">
-                                        <label>Nombre</label>
+                                        <label>Nombre:</label>
                                         <input id="itNombre" name="name" type="text" class="form-control" placeholder="Ingrese Nombre">
                                         <div id="mensaje1" class="errores">Escriba su nombre</div>
                                     </div>
                                     <div class="form-group col-lg-4">
-                                        <label>Correo Electrónico</label>
+                                        <label>Correo Electrónico:</label>
                                         <input id="itEmail" name="email" type="email" class="form-control" placeholder="Ingrese Email" required>
                                         <div id="mensaje2" class="errores">Escriba su correo electrónico</div>
                                     </div>
                                     <div class="form-group col-lg-4">
-                                        <label>Número de Teléfono</label>
+                                        <label>Número de Teléfono:</label>
                                         <input id="itTelefono" name="phone" type="tel" class="form-control" maxlength="12">
                                         <div id="mensaje3" class="errores">Escriba su telefono</div>
                                     </div>
@@ -145,7 +152,7 @@
 
                                 <div class="row">
                                     <div class="form-group col-lg-4">
-                                        <label>Queso</label>
+                                        <label>Queso:</label>
                                         <select id="cheese" name="cheese" class="form-control" required>
                                             <option value="">Seleccione...</option>
                                             <option value="Euro">Euro</option>
@@ -157,14 +164,14 @@
                                         </select>
                                     </div>
                                     <div class="form-group col-lg-4">
-                                        <label>Tipo de Queso</label>
+                                        <label>Tipo de Queso: </label>
                                         <select id="typeCheese" name="type_cheese" class="form-control">
                                             <option>Seleccione...</option>
 
                                         </select>
                                     </div>
                                     <div class="form-group col-lg-4">
-                                        <label>Peso</label>
+                                        <label>Peso:</label>
                                         <select id="weight" name="weight" class="form-control">
                                             <option value="">Seleccione...</option>
                                             <option value=300>300 gr</option>
@@ -178,20 +185,20 @@
 
                                 <div class="row">
                                     <div class="form-group col-lg-4">
-                                        <label>Cantidad</label>
+                                        <label>Cantidad:</label>
 
                                         <input id="amount" name="amount" type="number" class="form-control" min="1" onkeypress='return event.charCode >= 48 && event.charCode <= 57' max="50" step="1" value="1"  maxlength="2">
 
                                     </div>
                                     <div class="form-group col-lg-4">
-                                        <label>Costo (S/)</label>
+                                        <label>Costo (S/):</label>
                                         <input id="cost" type="text" class="form-control" value="100" name="cost">
                                     </div>
                                 </div>
                                 <div class="row">
                                     <div class="clearfix"></div>
                                     <div class="form-group col-lg-12">
-                                        <label>Mensaje</label>
+                                        <label>Mensaje:</label>
                                         <textarea name="message" class="form-control" rows="4"></textarea>
 
                                     </div>
@@ -204,8 +211,11 @@
                                 <button id="contact"  type="submit" class="btn btn-default btn-posicion">Enviar</button>
                             </div>
                         </div>
+
                     </form>
+                    <center><hr/></center>
                 </div>
+
             </div>
         </div>
     </div>
@@ -253,7 +263,7 @@
     <script type="text/javascript" src="js/menuPegagozo.js"></script>
 
     <!-- Bootstrap Core JavaScript -->
-
+    <span class="ir-arriba fa fa-arrow-up" title="ir arriba"></span>
 
 <script type="text/javascript">
    (function(){

@@ -1,0 +1,35 @@
+	*{
+		padding: 0px;
+		margin: 0px;
+
+	}
+	body{
+		background-color: white;
+	}
+	.contenido{
+		width: 500px;
+		margin: 20px auto;
+		text-align: justify;
+	}
+	.contenido p{
+		margin-bottom: 1em;
+	}
+	.ir-arriba {
+	/*porque noe no queremos que se muestre display in line permite modificar los atris inter*/
+	display:none; 
+	padding:20px;
+	background:#00838f;
+	font-size:20px;
+	color:#fff;
+	cursor:pointer;
+	position: fixed;
+	bottom:20px;
+	right:20px;
+	border-radius: 30px;
+	box-shadow: 2px 2px 2px #888888;
+	opacity: 0.8;
+}
+	.ir-arriba:hover{
+	background-color: #0097a7;
+
+}
