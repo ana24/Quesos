@@ -111,6 +111,18 @@ footer p {
     margin: 0;
     padding: 50px 0;
 }
+.flechas{
+    display: none;
+    padding: 0;
+}
+
+@media screen and (max-width: 400px){
+    .box {
+
+        padding: 30px 0px;
+
+    }
+}
 
 @media screen and (min-width:768px) {
     .brand {
@@ -124,6 +136,9 @@ footer p {
         font-weight: 700;
         line-height: normal;
         color: #fff;
+    }
+    .flechas{
+        display: block;
     }
 
     .top-divider {
