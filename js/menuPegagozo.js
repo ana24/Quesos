@@ -224,3 +224,8 @@ var f=document.getElementsByClassName("fechaHoy");
 for (var i = 0; i < f.length; i++) {
     f[i].innerHTML=fechaActual();
 }
+//solo para año
+var year =(new Date).getFullYear();
+$(document).ready(function(){
+    $("#anio").text(year);
+});
